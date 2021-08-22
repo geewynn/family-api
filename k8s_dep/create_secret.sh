@@ -1,0 +1,2 @@
+kubectl create ns families
+kubectl create secret generic -n families api-secret --from-literal=username=dbuser --from-literal=password=dbtestpassword --from-literal=host=34.132.241.132 --from-literal=port=27017 --from-literal=dbname=appDB --from-literal=collection=families

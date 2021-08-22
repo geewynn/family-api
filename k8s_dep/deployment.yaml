@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+  labels:
+    app: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api
+        image: gcr.io/possible-enigma-323420/simple-api:latest
+        ports:
+        - containerPort: 8080
+        env:
+          - name: DBUSER
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: username
+          - name: DBPASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: password
+          - name: DBHOST
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: host
+          - name: DBPORT
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: port
+          - name: DBNAME
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: dbname
+          - name: DBCOLLECTION
+            valueFrom:
+              secretKeyRef:
+                name: api-secret
+                key: collection
