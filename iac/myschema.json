@@ -1,0 +1,106 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "number",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "interest",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "gender",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "age",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "occupation",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "children",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "gender",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "numbers",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "age",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "interests",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "methow",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "gender",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "numbers",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "age",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "occupation",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "friends",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "occupation",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  }
+]
